@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="testscript.CreateUser">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="AfterTest"/>
+          <include name="beforeTest"/>
+          <include name="createUser"/>
+          <include name="AfterSuite"/>
+          <include name="beforeClass"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- testscript.CreateUser -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test4(failed)">
+    <classes>
+      <class name="testscript.CreateCustomerAndProjectTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="createCustomerAndProject"/>
+          <include name="AfterTest"/>
+          <include name="beforeTest"/>
+          <include name="AfterSuite"/>
+          <include name="beforeClass"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- testscript.CreateCustomerAndProjectTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" parallel="tests" name="Test5(failed)">
+    <classes>
+      <class name="testscript.DeleteAllProjectsCustomerTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="AfterTest"/>
+          <include name="beforeTest"/>
+          <include name="AfterSuite"/>
+          <include name="deleteAll"/>
+          <include name="beforeClass"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- testscript.DeleteAllProjectsCustomerTest -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+</suite> <!-- Failed suite [Suite] -->
